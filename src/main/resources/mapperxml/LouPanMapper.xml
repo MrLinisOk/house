@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.LouPanMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.LouPan">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="delivery_time" jdbcType="DATE" property="deliveryTime" />
+    <result column="createtime" jdbcType="INTEGER" property="createtime" />
+    <result column="average_price" jdbcType="DECIMAL" property="averagePrice" />
+    <result column="project_address" jdbcType="VARCHAR" property="projectAddress" />
+    <result column="developers" jdbcType="VARCHAR" property="developers" />
+    <result column="property_company" jdbcType="VARCHAR" property="propertyCompany" />
+    <result column="property_type" jdbcType="CHAR" property="propertyType" />
+    <result column="goods_ids" jdbcType="VARCHAR" property="goodsIds" />
+    <result column="volume_rate" jdbcType="VARCHAR" property="volumeRate" />
+    <result column="greening_rate" jdbcType="INTEGER" property="greeningRate" />
+    <result column="property_time" jdbcType="INTEGER" property="propertyTime" />
+    <result column="loupanvideo" jdbcType="VARCHAR" property="loupanvideo" />
+    <result column="loupanimages" jdbcType="VARCHAR" property="loupanimages" />
+    <result column="totalfloor" jdbcType="INTEGER" property="totalfloor" />
+    <result column="mianji" jdbcType="DECIMAL" property="mianji" />
+    <result column="jianzhumianji" jdbcType="VARCHAR" property="jianzhumianji" />
+    <result column="jianmian" jdbcType="VARCHAR" property="jianmian" />
+    <result column="community" jdbcType="VARCHAR" property="community" />
+    <result column="loudongshu" jdbcType="INTEGER" property="loudongshu" />
+    <result column="chewei" jdbcType="VARCHAR" property="chewei" />
+    <result column="user" jdbcType="INTEGER" property="user" />
+    <result column="wuyeprice" jdbcType="DECIMAL" property="wuyeprice" />
+    <result column="zhuangxiu" jdbcType="CHAR" property="zhuangxiu" />
+    <result column="selladdress" jdbcType="VARCHAR" property="selladdress" />
+    <result column="jianzhustyle" jdbcType="CHAR" property="jianzhustyle" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="zuobiao" jdbcType="VARCHAR" property="zuobiao" />
+    <result column="county_id" jdbcType="INTEGER" property="countyId" />
+    <result column="jingpin" jdbcType="CHAR" property="jingpin" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.hangchuang.house.pojo.LouPan">
+    <result column="peitao" jdbcType="LONGVARCHAR" property="peitao" />
+  </resultMap>
+
+</mapper>

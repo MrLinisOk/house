@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.FindPingLunMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.FindPingLun">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="findarticle_id" jdbcType="INTEGER" property="findarticleId" />
+    <result column="user" jdbcType="VARCHAR" property="user" />
+    <result column="top" jdbcType="CHAR" property="top" />
+    <result column="status" jdbcType="CHAR" property="status" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.hangchuang.house.pojo.FindPingLun">
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+
+</mapper>

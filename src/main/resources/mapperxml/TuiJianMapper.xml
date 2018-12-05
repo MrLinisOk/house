@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.TuiJianMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.TuiJian">
+    <id column="id" jdbcType="TINYINT" property="id" />
+    <result column="user_id" jdbcType="TINYINT" property="userId" />
+    <result column="shenfen_id" jdbcType="VARCHAR" property="shenfenId" />
+    <result column="mobile" jdbcType="INTEGER" property="mobile" />
+    <result column="region" jdbcType="VARCHAR" property="region" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="look_time" jdbcType="VARCHAR" property="lookTime" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.hangchuang.house.pojo.TuiJian">
+    <result column="demand" jdbcType="LONGVARCHAR" property="demand" />
+  </resultMap>
+
+</mapper>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.EmsMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.Ems">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="event" jdbcType="VARCHAR" property="event" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="times" jdbcType="INTEGER" property="times" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="createtime" jdbcType="INTEGER" property="createtime" />
+  </resultMap>
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.AreaMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.Area">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="shortname" jdbcType="VARCHAR" property="shortname" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="mergename" jdbcType="VARCHAR" property="mergename" />
+    <result column="level" jdbcType="TINYINT" property="level" />
+    <result column="pinyin" jdbcType="VARCHAR" property="pinyin" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="zip" jdbcType="VARCHAR" property="zip" />
+    <result column="first" jdbcType="VARCHAR" property="first" />
+    <result column="lng" jdbcType="VARCHAR" property="lng" />
+    <result column="lat" jdbcType="VARCHAR" property="lat" />
+  </resultMap>
+
+</mapper>

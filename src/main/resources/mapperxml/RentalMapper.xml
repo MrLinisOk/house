@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.RentalMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.Rental">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="totalprice" jdbcType="DECIMAL" property="totalprice" />
+    <result column="paytype" jdbcType="CHAR" property="paytype" />
+    <result column="goods_ids" jdbcType="VARCHAR" property="goodsIds" />
+    <result column="rentaltype" jdbcType="CHAR" property="rentaltype" />
+    <result column="huxing_id" jdbcType="INTEGER" property="huxingId" />
+    <result column="mianji" jdbcType="REAL" property="mianji" />
+    <result column="chaoxiang" jdbcType="CHAR" property="chaoxiang" />
+    <result column="floor" jdbcType="INTEGER" property="floor" />
+    <result column="totalfloor" jdbcType="INTEGER" property="totalfloor" />
+    <result column="zhaungxiu" jdbcType="CHAR" property="zhaungxiu" />
+    <result column="community" jdbcType="VARCHAR" property="community" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="county_id" jdbcType="VARCHAR" property="countyId" />
+    <result column="buildyear" jdbcType="INTEGER" property="buildyear" />
+    <result column="lift" jdbcType="VARCHAR" property="lift" />
+    <result column="property" jdbcType="CHAR" property="property" />
+    <result column="housetype" jdbcType="CHAR" property="housetype" />
+    <result column="createtime" jdbcType="INTEGER" property="createtime" />
+    <result column="houseimages" jdbcType="VARCHAR" property="houseimages" />
+    <result column="zuobiao" jdbcType="VARCHAR" property="zuobiao" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="telphone" jdbcType="CHAR" property="telphone" />
+    <result column="status" jdbcType="CHAR" property="status" />
+    <result column="top" jdbcType="CHAR" property="top" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.hangchuang.house.pojo.RentalWithBLOBs">
+    <result column="paydescription" jdbcType="LONGVARCHAR" property="paydescription" />
+    <result column="facilities" jdbcType="LONGVARCHAR" property="facilities" />
+  </resultMap>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.AttachmentMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.Attachment">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="admin_id" jdbcType="INTEGER" property="adminId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="imagewidth" jdbcType="VARCHAR" property="imagewidth" />
+    <result column="imageheight" jdbcType="VARCHAR" property="imageheight" />
+    <result column="imagetype" jdbcType="VARCHAR" property="imagetype" />
+    <result column="imageframes" jdbcType="INTEGER" property="imageframes" />
+    <result column="filesize" jdbcType="INTEGER" property="filesize" />
+    <result column="mimetype" jdbcType="VARCHAR" property="mimetype" />
+    <result column="extparam" jdbcType="VARCHAR" property="extparam" />
+    <result column="createtime" jdbcType="INTEGER" property="createtime" />
+    <result column="updatetime" jdbcType="INTEGER" property="updatetime" />
+    <result column="uploadtime" jdbcType="INTEGER" property="uploadtime" />
+    <result column="storage" jdbcType="VARCHAR" property="storage" />
+    <result column="sha1" jdbcType="VARCHAR" property="sha1" />
+  </resultMap>
+
+</mapper>

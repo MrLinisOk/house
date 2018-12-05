@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.AdminLogMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.AdminLog">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="admin_id" jdbcType="INTEGER" property="adminId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="useragent" jdbcType="VARCHAR" property="useragent" />
+    <result column="createtime" jdbcType="INTEGER" property="createtime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.hangchuang.house.pojo.AdminLog">
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+
+  <select id="selectAll" resultType="com.hangchuang.house.pojo.AdminLog">
+    select * from fa_admin_log
+  </select>
+</mapper>

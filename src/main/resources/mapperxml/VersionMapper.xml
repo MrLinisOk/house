@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.VersionMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.Version">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="oldversion" jdbcType="VARCHAR" property="oldversion" />
+    <result column="newversion" jdbcType="VARCHAR" property="newversion" />
+    <result column="packagesize" jdbcType="VARCHAR" property="packagesize" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="downloadurl" jdbcType="VARCHAR" property="downloadurl" />
+    <result column="enforce" jdbcType="BIT" property="enforce" />
+    <result column="createtime" jdbcType="INTEGER" property="createtime" />
+    <result column="updatetime" jdbcType="INTEGER" property="updatetime" />
+    <result column="weigh" jdbcType="INTEGER" property="weigh" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+  </resultMap>
+
+</mapper>
