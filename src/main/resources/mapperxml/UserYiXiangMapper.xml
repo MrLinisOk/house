@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hangchuang.house.mapper.UserYiXiangMapper">
+  <resultMap id="BaseResultMap" type="com.hangchuang.house.pojo.UserYiXiang">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="yixiang" jdbcType="CHAR" property="yixiang" />
+    <result column="housetype" jdbcType="CHAR" property="housetype" />
+    <result column="budget" jdbcType="DOUBLE" property="budget" />
+  </resultMap>
+
+</mapper>
