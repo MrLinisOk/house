@@ -16,4 +16,7 @@
     <result column="lat" jdbcType="VARCHAR" property="lat" />
   </resultMap>
 
+  <select id="selectAllArea" resultType="com.hangchuang.house.vo.AreaVo">
+    SELECT id, pid, shortname, name, mergename, level, first  FROM fa_area a where level=2 ORDER BY CONVERT( a.shortname USING gbk ) ASC
+  </select>
 </mapper>
